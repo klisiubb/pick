@@ -1,0 +1,2 @@
+# pick
+ Strona na PICK
