@@ -396,7 +396,7 @@ margin-top: 15px;
       }
       #obraz{
          grid-area: fotka;
-        background-image: url("/img/background.jpg");
+        background-image: url("https://github.com/klisiubb/pick/blob/main/img/background.jpg?raw=true");
         background-repeat: no-repeat;
         
         }
