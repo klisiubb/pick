@@ -1,0 +1,466 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    color: white;
+    background: linear-gradient(#2185d0 0%, #114368 100%);
+    background-attachment: fixed;
+    text-align: center;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+#menu{
+  float: left;
+}
+#flex{
+ display: flex;
+ flex-direction: column;
+}
+#main{
+    min-height: 100vh;
+}
+#plans{
+   min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#about{
+    min-height: 100vh;
+}
+#contact{
+    display: flex;
+    min-height: 100vh;
+    color:#2185d0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer{
+    min-height: 20vh;
+    display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-template-areas:
+    "lewe-napisy prawe-napisy";
+
+}
+#main-napis-duzy{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    height: 100vh;
+     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+#main-napis-maly{
+    margin-top: 10px;
+    text-transform: none;
+    font-size: 12px;
+}
+#plans-napis{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2185d0;
+}
+#planboxy{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+.plan-box{
+    margin-top: 20px;
+    background: linear-gradient(#6435c9 0%, #2185d0 100%);
+    border: 1px solid #707070;
+    border-radius: 60px;
+    width: 66%;
+    max-width: 420px;
+
+}
+.plan-nazwa{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.plan-cena{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.plan-opis{
+    margin-top: 45px;
+    margin-bottom: 90px;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+#trojkaty{
+margin-top: 15px;
+}
+#lewy{
+
+}
+#prawy{
+
+}
+.about-napis{
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.about-opcja{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.about-opcja:last-child{
+    margin-bottom: 50px;
+}
+.about-text{
+    margin: 25px;
+}
+.contact-text{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#mapa {
+    display: flex;
+    margin-top: 20px;
+}
+  #contact-form{
+      margin-top: 40px;
+      border-radius: 40px;
+    background: linear-gradient(#2185d0 0%, #6435c9 100%);
+    max-width: 260px;
+    color:white;
+    padding: 20px;
+    margin-bottom: 80px;
+    border: 0px;
+  }
+  #lewe-napisy{
+    grid-area: lewe-napisy;
+  }
+  #prawe-napisy{
+    grid-area: prawe-napisy;
+    display: grid;
+    grid-template-columns: 40px 40px;
+    grid-template-rows: 40% 40% 20%;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ikona1 ikona2"
+      "ikona3 ikona4"
+      "napisy-pod napisy-pod";
+  }
+  .odsylacze{
+    margin-top:  10px;
+  }
+  .belka-stopka{
+      margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .stopka-adresowe {
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .maly{
+    margin-top: 5px;
+      font-size: 9px;
+      text-align: right;
+      margin-right: 10px;
+  }
+  textarea{
+      border-radius: 30px;
+  }
+  input{
+    border-radius: 30px; 
+  }
+  button{
+      color:white;
+      background-color: black;
+      border-radius: 20px;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  .hamburger {
+    display: block;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+  }
+  
+  .hamburger, .navigation {
+    transition: transform .3s .1s ease-in-out;
+  }
+  
+  .hamburger--active {
+    transform: translatex(250px);
+  }
+  
+  .hamburger__box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  .hamburger__inner {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
+  }
+  
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    content: '';
+    left: 0;
+    transition: transform .2s .2s ease-in-out;
+  } 
+  
+  .hamburger__inner::before {
+    top: -10px;
+  }
+  
+  .hamburger__inner::after {
+    top: 10px;
+  }
+  
+  .hamburger--active .hamburger__inner {
+    background-color: transparent;
+  }
+  
+  .hamburger--active .hamburger__inner:before {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger--active .hamburger__inner:after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  .navigation {
+    height: 100vh;
+    width: 250px;
+    background: linear-gradient(#2185d0 0%, #114368 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+  }
+  
+  .navigation--active {
+    transform: translateX(0px);
+    border-right: 1px solid white;
+  }
+  
+  .navigation__list {
+    margin-top: 50px;
+    list-style: none;
+  }
+  
+  .navigation__item {
+    margin-bottom: 20px;}
+    
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+    #ikona1 { grid-area: ikona1; margin-left: 90px; }
+    #ikona2 { grid-area: ikona2; margin-left: 90px;}
+    #ikona3 { grid-area: ikona3; margin-left: 90px;}
+    #ikona4 { grid-area: ikona4; margin-left: 90px;}
+    #napisy-pod { grid-area: napisy-pod; margin-bottom: 10px; margin-right: 5px; }
+    textarea{margin-top: 5px;}
+    input{margin-top: 5px; margin-bottom: 5px;}
+    #obraz{ display: none;}
+    #menu-duze{display: none;}
+    #kontakt-duzy{display: none;}
+    #or{display: none;}
+    .opcja1{display: none;}
+    .loga{height: 64px; width: 64px;}
+    .logo3{height: 16px; width: 16px;}
+    #mapa{width: 100%;height: 100%;}
+    #google{width: 100%;height: 100%;}
+    @media (min-width: 768px) {
+      #ikona1 { grid-area: ikona1; margin-left: 290px; }
+    #ikona2 { grid-area: ikona2; margin-left: 290px;}
+    #ikona3 { grid-area: ikona3; margin-left: 290px;}
+    #ikona4 { grid-area: ikona4; margin-left: 290px;}
+      #main-napis-duzy{ font-size: 24px;}
+      #main-napis-maly{font-size: 18px; font-weight: normal; margin-top: 20px;}
+      #plans-napis{font-size: 24px;}
+      .plan-opis{font-size: 16px;}
+      .about-napis{font-size: 24px;}
+      .about-text{font-size: 18px;}
+      .contact-text{font-size: 24px;}
+      #contact-form{font-size: 20px; width: 200px;}
+      textarea{margin-top: 10px;}
+      button{font-size: 16px; padding: 5px; margin-top: 10px; width: 60px; height: 30px;}
+      input{margin-top: 10px; margin-bottom:10px;}
+      .belka-stopka{ font-size: 18px;}
+      .stopka-adresowe{font-size: 16px;}
+      .maly{font-size: 14px;}
+      .plan-box{max-width: 300px;}
+      .navigation__list{margin-top: 30vh;}
+      .navigation__item{margin-top: 20px;}
+      a{font-size: 25px;}
+      .loga{height: 64px; width: 64px;}
+    }
+    @media (min-width: 1024px) {
+    #ikona1 { grid-area: ikona1; margin-left: 390px; }
+    #ikona2 { grid-area: ikona2; margin-left: 390px;}
+    #ikona3 { grid-area: ikona3; margin-left: 390px;}
+    #ikona4 { grid-area: ikona4; margin-left: 390px;}
+    }
+    @media (min-width: 1280px) {
+      #menu-duze{display: block;}
+      #main-napis-duzy{ font-size: 40px;}
+      #main-napis-maly{font-size: 30px; font-weight: normal;}
+      #plans-napis{font-size: 50px;}
+      .plan-nazwa{font-size: 50px;}
+      .plan-cena{font-size: 50px;}
+      .plan-opis{font-size: 30px;}
+      .about-napis{font-size: 50px;}
+      .about-text{font-size: 40px;}
+      .contact-text{font-size: 50px;}
+      .belka-stopka{ font-size: 18px;}
+      .stopka-adresowe{font-size: 16px;}
+      .maly{font-size: 21px;}
+      #menu{display: none;}
+      #planboxy{flex-direction: row;}
+      .plan-box{margin-top:100px;}
+      .plan-box:nth-child(2){margin-left: 100px;margin-right: 100px;}
+      #lewe-napisy{display: none;}
+      #obraz{display: flex;}
+      #none{display: none;}
+      #menu-full-size{display: flex;}
+      #about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "napis1 napis2"
+          "opcja-lewo1 opcja-prawo-1"
+          "opcja-lewo2 opcja-prawo-2"
+          ". opcja-prawo-3";
+      }
+      #napis1 { grid-area: napis1; }
+      #napis2 { grid-area: napis2; }
+      #opcja-lewo-1 { grid-area: opcja-lewo1; }
+      #opcja-prawo-1 { grid-area: opcja-prawo-1; }
+      #opcja-lewo-2 { grid-area: opcja-lewo2; }
+      #opcja-prawo-2 { grid-area: opcja-prawo-2; }
+      #opcja-prawo-3 { grid-area: opcja-prawo-3; }
+      #main{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 718px 1.0fr;
+        grid-template-rows: 150px 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "fotka menu-duze"
+          "fotka text";
+      }
+      #obraz{
+         grid-area: fotka;
+        background-image: url("/img/background.jpg");
+        background-repeat: no-repeat;
+        
+        }
+      #main-napisy{
+        grid-area: text;
+     margin-bottom: 500px;
+      }
+      #menu-duze{
+        background-color: white;
+      }
+      .menu-duze-item{float:right; margin-right: 40px; margin-top: 50px;}
+      .menu-duze-item a{
+        color: #2185d0;
+      }
+      #plans {min-height: 100vh;}
+      #left{float: left;
+        font-family: Perpetua;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+        #logo {float: left; margin-left: 40px; margin-bottom:20px;}
+        #footer{min-height: 10vh; display: block;}
+        #prawe-napisy{display: block; margin-left: 10px;margin-top: 30px;}
+        .odsylacze{float: left; margin-left: 5px;}
+        .maly{ font-size: 14px;}
+        #napisy-pod{font-weight: bold;}
+        #id2{font-weight: normal;}
+        #contact{
+          display: grid;
+          justify-items: center;
+          align-items: center;
+    grid-template-columns: 1fr 0.5fr 50px 0.5fr;
+     grid-template-rows: 120px 1fr 1fr 1fr 200px;
+    gap: 0px 0px;
+    grid-template-areas:
+    "mapa napis napis napis"
+    "mapa opcja1 or form"
+    "mapa opcja2 or form"
+    "mapa opcja3 or form"
+    "mapa . or .";
+        }
+        #mapa {display:grid;grid-area: mapa;width: 100%;height: 100%;margin-top: 0px;}
+        #mapa img {min-height: auto;}
+        #kontakt-duzy{display:grid; grid-area: napis;}
+        #id {display: none;}
+        #contact-form{grid-area: form; margin-left: 120px; margin-right: 10px;margin-top: 190px; width: 450px; height: 500px;}
+        #or{display: grid;grid-area: or; font-size: 30px; font-weight: bold; margin-bottom: 160px;}
+        .opcja1{display: grid; font-size: 20px; font-weight: bold; margin-left: 10px;justify-items: center;
+          align-items: left;}
+        .opcja1 :nth-child(1){grid-area: opcja1;}
+        .opcja1 :nth-child(2){grid-area: opcja2;}
+        .opcja1 :nth-child(3){grid-area: opcja3;}
+        .loga{height: 128px; width: 128px;}
+        .loga1{height: 64px; width: 64px; margin-top: 50px;}
+        .logo3{height: 32px; width: 32px;}
+        .logo3 {stroke: white !important;}
+        #ikona1{margin-left: 0px;}
+        #ikona3{margin-left: 0px;}
+        #ikona2{margin-left: 0px;}
+        #ikona4{margin-left: 0px;}
+        button{margin-top: 40px;}
+        form{margin-top: 50px;}
+        input{width: 80%; height:20px;}
+        textarea{width: 80%; height:160px}
+        label{font-size: 30px;}
+    } 
+    
